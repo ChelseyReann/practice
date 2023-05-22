@@ -33,3 +33,9 @@ const twoSum = (nums, target) => {
 // const target = 6
 // const result = twoSum(nums, target)
 // console.log(result)
+
+//How this method works:
+// 1. Start with the first number in the array and compare it with all the remaining numbers in the array.
+// 2. For each comparison, check if the sum of the current number and the number being compared is equal to the target.
+// 3. If a pair is found where the sum equals the target, return the indices of the two numbers.
+// 4. If no pair is found after checking all possible combinations, return an empty array to indicate that there are no indices that satisfy the given conditions.
