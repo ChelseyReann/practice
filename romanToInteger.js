@@ -43,6 +43,7 @@ function romanToInteger(s){
     return total;
 }
 
-console.log(romanToInteger("III"))
-console.log(romanToInteger("LVIII"))
-console.log(romanToInteger("MCMXCIV"))
+// console.log(romanToInteger("III"))
+// console.log(romanToInteger("LVIII"))
+// console.log(romanToInteger("MCMXCIV"))
+console.log(romanToInteger("IV"))
