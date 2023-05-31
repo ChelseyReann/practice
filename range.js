@@ -11,3 +11,19 @@ range(1,1) //=> []
 range(5,2) //=> "First argument must be less than second"
 -----------------------------------------------------------------*/
 // Your solution for 06-range here:
+
+function range (start, finish){
+    if (start > finish) return 'First argument must be less than second';
+
+    let range = [];
+    for (let n = start; n < finish; n++){
+        range.push(n)
+    }
+
+    return range;
+}
+
+console.log(range(1,4))
+console.log(range(-2, 3))
+console.log(range(1,1))
+console.log(range(5,2))
