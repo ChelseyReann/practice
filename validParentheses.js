@@ -29,26 +29,26 @@
 // }
 
 const isValid = (s) => {
-    const stack = [];
+    const stack = [];  // O(1)
  
    for (let ch of s) {
-     if (ch === '(' || ch === '{' || ch === '[') {
-       stack.push(ch);
+     if (ch === '(' || ch === '{' || ch === '[') { // On
+       stack.push(ch); //On
      } else {
-       if (stack.length === 0) return false;
+       if (stack.length === 0) return false; //On
  
-       const top = stack.pop();
+       const top = stack.pop(); //On
        if (
-         (ch === ')' && top !== '(') ||
-         (ch === '}' && top !== '{') ||
-         (ch === ']' && top !== '[')
+         (ch === ')' && top !== '(') || //On
+         (ch === '}' && top !== '{') || //On
+         (ch === ']' && top !== '[')    // On
        ) {
-         return false;
+         return false;                  // On
        }
      }
    }
  
-   return stack.length === 0;
+   return stack.length === 0;  // O1
  };
 
 console.log(isValid("()"))
