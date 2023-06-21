@@ -12,12 +12,10 @@ const createCounter = (init) => {
     let count = init
 
     function increment() {
-        count = init
         return ++count
     }
 
     function decrement() {
-        count = init
         return --count
     }
 
@@ -27,9 +25,9 @@ const createCounter = (init) => {
     }
 
     return {
-        increment: increment(),
-        decrement: decrement(),
-        reset: reset()
+        increment: increment,
+        decrement: decrement,
+        reset: reset
     }
 }
 
