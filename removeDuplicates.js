@@ -16,6 +16,9 @@ function removeDuplicates(nums){
     return results
 }
 
+//Time complexity - O(N) - N = number of elements in the nums array that we are iterating through
+//Space complexity - O(N) - creating a new freqmap and results array. taking up new space in memory
+
 // const removeDuplicates = (nums) => {
 //     let k = 0; //O(1)
 //     for(let i = 1; i < nums.length; i++) { //O(n)
