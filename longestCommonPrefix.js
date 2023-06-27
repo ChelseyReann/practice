@@ -33,3 +33,5 @@ function longestCommonPrefix(strs){
 console.log(longestCommonPrefix(["flower","flow","flight"]))
 console.log(longestCommonPrefix(["dog","racecar","car"]))
 console.log(longestCommonPrefix(["cargo","carnivore","car"]))
+//Time complexity - O(N*M) - N = number of strings and M = common prefix
+//Space complexity - O(1) - doesn't use any additional data structures so it is using constant space
