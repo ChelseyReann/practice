@@ -26,3 +26,6 @@ let arr1 = [1,4,6,7,8,6,9]
 let arr2 = [2,4,5,9,8]
 console.log(getIntersection(arr1, arr2))
 //[4,8,9]
+
+//Time complexity - O(N*M)
+//space complexity - O(N)
