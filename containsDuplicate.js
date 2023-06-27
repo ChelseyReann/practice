@@ -14,15 +14,30 @@
 
 // console.log(containsDuplicate([1,2,3,1]))
 
-let containsDuplicate = function(nums) {
-    let countMap = {}
-    let len = nums.length
-    for (let num of nums) {
-        if (countMap[num]) {
+// let containsDuplicate = function(nums) {
+//     let countMap = {}
+//     let len = nums.length
+//     for (let num of nums) {
+//         if (countMap[num]) {
+//             return true
+//         }
+//         countMap[num] = 1
+//     }
+//     return false
+// }
+
+
+function containsDuplicate(nums){
+    let freqMap = {}
+
+    for (let i = 0; i < nums.length; i++){
+        if(freqMap[nums[i]]){
             return true
         }
-        countMap[num] = 1
+        freqMap[nums[i]] = true
     }
     return false
 }
 
+let nums = [1,2,3,1]
+console.log(containsDuplicate(nums))
