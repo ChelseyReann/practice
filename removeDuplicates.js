@@ -3,20 +3,33 @@
 //Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums.
 //Return k.
 
-const removeDuplicates = (nums) => {
-    let k = 0; //O(1)
-    for(let i = 1; i < nums.length; i++) { //O(n)
-        console.log("in the for loop:" + i, k) //O(n)
-        if(nums[i] !== nums[k]) { //O(n)
-            console.log("in the if conditional:" + i, k)
-            k++; //O(1)
-            console.log("after k++:" + i, k)
-            nums[k] = nums[i] //O(1)
-            console.log("at nums[k] = nums[i]:" + i, k)
+function removeDuplicates(nums){
+    let freqMap = {}
+    let results = []
+
+    for (let i = 0; i < nums.length; i++){
+        if(!freqMap[nums[i]]){
+            results.push(nums[i])
         }
+        freqMap[nums[i]] = true
     }
-    return k + 1; //O(1)
+    return results
 }
+
+// const removeDuplicates = (nums) => {
+//     let k = 0; //O(1)
+//     for(let i = 1; i < nums.length; i++) { //O(n)
+//         console.log("in the for loop:" + i, k) //O(n)
+//         if(nums[i] !== nums[k]) { //O(n)
+//             console.log("in the if conditional:" + i, k)
+//             k++; //O(1)
+//             console.log("after k++:" + i, k)
+//             nums[k] = nums[i] //O(1)
+//             console.log("at nums[k] = nums[i]:" + i, k)
+//         }
+//     }
+//     return k + 1; //O(1)
+// }
 
 //time complexity O(n)
 
