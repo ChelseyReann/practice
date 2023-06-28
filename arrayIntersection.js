@@ -57,3 +57,5 @@ function getIntersection(arr1, arr2){
     }
     return results
 }
+//Time complexity - O(N) - only iterating through the arrys once to populate the frequency map
+//space complexity - O(M) - M is number of unique elements that are present in the freqMap that it needs to iterate through
