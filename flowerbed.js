@@ -27,3 +27,5 @@ function canPlant(flowerbed, n){
 let flowerbed = [1, 0, 0, 0, 1]
 let n = 1
 console.log(canPlant(flowerbed, n))
+//time complexity - O(N) - iterating through the array once
+//space complexity - O(1) - taking constant space because we aren't creating anything new
