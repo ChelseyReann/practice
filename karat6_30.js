@@ -69,3 +69,43 @@ function name_order(arr){
   //Time complexity - O(N^2)
   //Space complexity - O(N)
 
+  /*
+Given a list of ordered entry and exit records, write a function that returns a list of all the people still remaining in the building at the end of the record (who entered and did not exit).
+
+Sample input and output:
+
+records1 = [
+  ["Martha",   "enter"],
+  ["Paul",     "enter"],
+  ["Martha",   "exit"],
+  ["Steve",    "enter"],
+  ["Jennifer", "enter"],
+  ["Curtis",   "enter"],
+  ["Paul",     "exit"],
+  ["Martha",   "enter"],
+  ["Martha",   "exit"],
+  ["Jennifer", "exit"],
+  ["Curtis",   "exit"],
+  ["Paul",     "enter"],
+  ["Paul",     "exit"], 
+  ["Curtis",   "enter"]
+]
+
+Expected output: ["Steve", "Curtis"]
+
+records2 = [
+  ["Jennifer", "enter"],  
+  ["Paul", "enter"],
+  ["Paul", "exit"],
+  ["Paul", "enter"],
+  ["Paul", "exit"],
+  ["Jennifer", "exit"]
+]
+
+Expected output: []
+
+Complexity Discussion:
+n: the length of the records array
+
+*/
+
