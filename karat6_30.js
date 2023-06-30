@@ -29,6 +29,9 @@ function name_order(arr, name){
   }
 }
 
+//Time complexity - O(N)
+//Space complexity - O(1)
+
 /* We have an array and want to get back just the names of the employees that were in the building - no duplicates
 
 records1 = [
@@ -62,4 +65,7 @@ function name_order(arr){
   }
   
   console.log(name_order(records1))
+
+  //Time complexity - O(N^2)
+  //Space complexity - O(N)
 
