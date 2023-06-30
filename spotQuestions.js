@@ -42,9 +42,32 @@ function findTarget(numbers, k){
     return [0,0]
 }
 
+
+// console.log(findTarget(numbers, k))
+
+function findSumPair(numbers,k){
+    let freqMap = {}
+
+    for(let i = 0; i < numbers.length; i++){
+        if(!freqMap[numbers[i]]){
+            freqMap[numbers[i]] = 1
+        } else {
+            freqMap[numbers[i]]++
+        }
+        for (let nums in freqMap){
+            if(parseInt(nums) + numbers[i] === k){
+                return [parseInt(nums), numbers[i]]
+            }
+        }
+    }
+    return [0,0]
+    
+}
+
 let numbers = [2,5,5,7]
 let k = 10
-console.log(findTarget(numbers, k))
+console.log(findSumPair(numbers,k))
+
 
 //Time complexity of this function is O(N) - although it is 2 for loops they are looping through the same array twice and the number of iterations grows linearly
 //Space complexity for this function is O(1) - not creating anything new in memory for it to take up space.
