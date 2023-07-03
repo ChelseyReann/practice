@@ -22,3 +22,6 @@ let s1 = 'axc'
 let t1 = 'ahbgdc'
 console.log(isSubsequence(s,t))
 console.log(isSubsequence(s1,t1))
+
+//Time complexity - O(N) 
+//Space complexity - O(1)
