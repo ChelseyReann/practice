@@ -34,15 +34,28 @@ function searchInsert(nums, target){
 
 //Time complexity - O(log n)
 //Space complexity - O(1)
+let nums = [1,3,5,6]
+let target = 5
+let nums2 = [1,3,5,6]
+let target2 = 2
+let nums3 = [1,3,5,6]
+let target3 = 7
+console.log(searchInsert(nums, target))
+console.log(searchInsert(nums2, target2))
+console.log(searchInsert(nums3, target3))
 
-function search(nums, target){
-    for (let i = 0; i < nums.length; i++){
-        if(nums.includes(target)){
-            return nums.indexOf(target)
-        } else {
-            nums.push(target)
-            nums.sort((a,b) => a-b)
-            return nums.indexOf(target)
-        }
-    }
-}
+// function search(nums, target){
+//     for (let i = 0; i < nums.length; i++){
+//         if(nums.includes(target)){
+//             return nums.indexOf(target)
+//         } else {
+//             nums.push(target)
+//             nums.sort((a,b) => a-b)
+//             return nums.indexOf(target)
+//         }
+//     }
+// }
+
+// console.log(search(nums, target))
+// console.log(search(nums2, target2))
+// console.log(search(nums3, target3))
