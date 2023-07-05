@@ -34,3 +34,15 @@ function searchInsert(nums, target){
 
 //Time complexity - O(log n)
 //Space complexity - O(1)
+
+function search(nums, target){
+    for (let i = 0; i < nums.length; i++){
+        if(nums.includes(target)){
+            return nums.indexOf(target)
+        } else {
+            nums.push(target)
+            nums.sort((a,b) => a-b)
+            return nums.indexOf(target)
+        }
+    }
+}
