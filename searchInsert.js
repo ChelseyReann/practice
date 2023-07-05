@@ -31,3 +31,6 @@ function searchInsert(nums, target){
 
     return left
 }
+
+//Time complexity - O(log n)
+//Space complexity - O(1)
