@@ -13,6 +13,12 @@ function reverseLink(head){
         prev = current
         current = next
     }
-
     return prev
 }
+
+let head = [1,2,3,4,5]
+let head2 = [1,2]
+let head3 = []
+console.log(reverseLink(head))
+console.log(reverseLink(head2))
+console.log(reverseLink(head3))
