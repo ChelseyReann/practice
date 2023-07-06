@@ -14,9 +14,16 @@ function majorityElement(nums){
             freqMap[nums[i]] = 1
         } else {
             freqMap[nums[i]]++
-            if(freqMapnums[i] > nums.length / 2){
+            if(freqMap[nums[i]] > nums.length / 2){
                 return nums[i]
             }
         }
     }
 }
+
+let nums = [3,2,3]
+let nums2 = [2,2,1,1,1,2,2]
+let nums3 = [1]
+console.log(majorityElement(nums))
+console.log(majorityElement(nums2))
+console.log(majorityElement(nums3))
