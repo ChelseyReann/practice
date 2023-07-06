@@ -33,3 +33,6 @@ let head3 = []
 console.log(reverseLink(head))
 console.log(reverseLink(head2))
 console.log(reverseLink(head3))
+
+//time complexity - O(N)
+//Space complexity - O(1)
