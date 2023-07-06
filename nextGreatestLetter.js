@@ -20,6 +20,9 @@ function nextGreatestLetter(letters, target){
     return letters[0]
 }
 
+//time complexity - O(N)
+//space complexity - O(1)
+
 let letters = ['c', 'f', 'j']
 let target = 'a'
 let letters1 = ['c', 'f', 'j']
@@ -52,6 +55,8 @@ function nextLetter(letters, target){
     }
     return letters[start]
 }
+//time complexity - O(log n)
+//space complexity - O(1)
 
 console.log(nextLetter(letters, target))
 console.log(nextLetter(letters1, target1))
