@@ -12,3 +12,35 @@ Approach:
  - if the strs contain all the same characters push them into the str array and then push them into the results array
  - return the results array
 */
+
+function groupAnagrams(strs){
+    let results = []
+    let freqMap = {}
+
+    if(strs.length === 0){
+        return results
+    }
+
+    for(let str of strs){
+        let sortedStr = str.split("").sort().join("")
+        console.log("sorted string: " + sortedStr)
+        if(freqMap[sortedStr]){
+            freqMap[sortedStr].push(str)
+            console.log("str: " + str)
+            console.log("freqMap: " + JSON.stringify(freqMap))
+        } else {
+            freqMap[sortedStr] = [str]
+        }
+    }
+
+    for(let key in freqMap){
+        results.push(freqMap[key])
+        console.log("results: " + results)
+        console.log("freqMap[key]: " + freqMap[key])
+    }
+
+    return results
+}
+
+let strs = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat']
+console.log(groupAnagrams(strs))
