@@ -13,3 +13,16 @@ You must do this by modifying the input array in-place with O(1) extra memory.
  - those two steps ensures the swap and then we increment start and decrement end to iterate through
  - nothing to return
 */
+
+function reverseString(s){
+    let start = 0
+    let end = s.length - 1
+
+    while (start <= end){
+        let current = s[start]
+        s[start] = s[end]
+        s[end] = current
+        start++
+        end--
+    }
+}
