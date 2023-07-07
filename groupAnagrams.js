@@ -44,3 +44,6 @@ function groupAnagrams(strs){
 
 let strs = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat']
 console.log(groupAnagrams(strs))
+
+//time complexity - O(N)
+//space complexity - O(N)
