@@ -44,3 +44,5 @@ let s3 = 'careen'
 console.log(reverseVowels(s))
 console.log(reverseVowels(s2))
 console.log(reverseVowels(s3))
+//Time complexity - O(N)
+//Space complexity - O(N)
