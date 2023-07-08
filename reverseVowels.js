@@ -19,20 +19,28 @@ function reverseVowels(s){
     let split = s.split("")
 
     while (start <= end){
-        if(!vowels.includes(s[start]) && !vowels.includes[s[end]]){
+        if(!vowels.includes(split[start]) && !vowels.includes(split[end])){
             start++
             end--
-        } else if (!vowels.includes(s[start]) && vowels.includes(s[end])){
+        } else if (!vowels.includes(split[start]) && vowels.includes(split[end])){
             start++
-        } else if (vowels.includes(s[start]) && !vowels.includes(s[end])){
+        } else if (vowels.includes(split[start]) && !vowels.includes(split[end])){
             end--
-        } else if(vowels.includes(s[start]) && vowels.includes(s[end])){
-            let current = s[start]
-            s[start] = s[end]
-            s[end] = current
+        } else if(vowels.includes(split[start]) && vowels.includes(split[end])){
+            let current = split[start]
+            split[start] = split[end]
+            split[end] = current
             start++
             end--
         }
     }
     return split.join("")
 }
+
+
+let s = 'hello'
+let s2 = 'brennan'
+let s3 = 'careen'
+console.log(reverseVowels(s))
+console.log(reverseVowels(s2))
+console.log(reverseVowels(s3))
