@@ -121,17 +121,3 @@ approach:
 - return results array
 */
 
-function findTarget(str, target){
-    let results = []
-
-    for (let i = 0; i < str.length; i++){
-        if(str[i] === target){
-            results.push(i)
-        }
-    }
-    return results
-}
-
-let str = 'Hello, World'
-let target = 'o'
-console.log(findTarget(str, target))
