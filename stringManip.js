@@ -48,12 +48,12 @@ function booleanMatch(str1, str2){
     }
     return false
 }
-let str1 = "apple"
-let str2 = 'aura'
-let str3 = "orange"
-let str4 = 'banana'
-console.log(booleanMatch(str1,str2))
-console.log(booleanMatch(str3,str4))
+// let str1 = "apple"
+// let str2 = 'aura'
+// let str3 = "orange"
+// let str4 = 'banana'
+// console.log(booleanMatch(str1,str2))
+// console.log(booleanMatch(str3,str4))
 //Time complexity - O(N)
 //Space complexity - O(1)
 
@@ -63,3 +63,18 @@ Given two strings str1 and str2, write a function to return the count of distinc
 Example Input: "hello", "helps"
 Example Output: 3
 */
+
+function countMatch(str1, str2){
+    let count = 0
+
+    for(let i = 0; i < str1.length; i++){
+        if(str1[i] === str2[i]){
+            count++
+        }
+    }
+    return count
+}
+
+let str1 = 'hello'
+let str2 = 'helps'
+console.log(countMatch(str1,str2))
