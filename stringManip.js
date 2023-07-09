@@ -99,12 +99,12 @@ function differentMatch(str1, str2){
     return results
 }
 
-let str1 = 'coffee'
-let str2 = 'cookie'
-let str3 = 'book'
-let str4 = 'look'
-console.log(differentMatch(str1, str2))
-console.log(differentMatch(str3, str4))
+// let str1 = 'coffee'
+// let str2 = 'cookie'
+// let str3 = 'book'
+// let str4 = 'look'
+// console.log(differentMatch(str1, str2))
+// console.log(differentMatch(str3, str4))
 //time complexity - O(N)
 //space complexity - O(1)
 
@@ -121,3 +121,17 @@ approach:
 - return results array
 */
 
+function findTarget(str, target){
+    let results = []
+
+    for (let i = 0; i < str.length; i++){
+        if(str[i].toLowerCase() === target){
+            results.push(i)
+        }
+    }
+    return results
+}
+
+let str = 'HellO, World'
+let target = 'o'
+console.log(findTarget(str, target))
