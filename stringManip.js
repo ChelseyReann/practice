@@ -181,6 +181,12 @@ Develop a function that takes a list of strings and a target string, and returns
 
 Example Input: ["apple", "banana", "grape", "kiwi"], "a"
 Example Output: [0, 1, 3]
+
+approach:
+- create empty results array
+- loop through array
+- check if arr[i] === target, if yes push i into results
+- return results
 */
 
 
