@@ -10,5 +10,18 @@ Approach:
 - check if the number is divisible by 2, if yes push that index into the results array
 - return results array
 */
+function findIndex(arr){
+    let results = []
+
+    for (let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 === 0){
+            results.push(i)
+        }
+    }
+    return results
+}
+
+let arr = [1, 2, 3, 4, 5, 6]
+console.log(findIndex(arr))
 
 
