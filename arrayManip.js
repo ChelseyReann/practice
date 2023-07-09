@@ -24,4 +24,9 @@ function findIndex(arr){
 let arr = [1, 2, 3, 4, 5, 6]
 console.log(findIndex(arr))
 
+//time complexity - O(N)
+//space complexity - O(N)
+
+
+
 
