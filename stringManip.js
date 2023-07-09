@@ -144,4 +144,10 @@ Implement a function that receives a sentence and a word and returns the indices
 
 Example Input: "The cat and the dog sat on the mat.", "the"
 Example Output: [0, 11, 19]
+
+Approach:
+- create results array
+- loop through strings
+- if the string contains the target push the index of that word into the results array
+- return the results array
 */
