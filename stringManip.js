@@ -113,4 +113,25 @@ Write a function that accepts a string and a character and returns the indices o
 
 Example Input: "Hello, World!", "o"
 Example Output: [4, 8]
+
+approach:
+- create empty results array
+- loop through string
+- check if that index is equal to the target - push that index in the results array
+- return results array
 */
+
+function findTarget(str, target){
+    let results = []
+
+    for (let i = 0; i < str.length; i++){
+        if(str[i] === target){
+            results.push(i)
+        }
+    }
+    return results
+}
+
+let str = 'Hello, World'
+let target = 'o'
+console.log(findTarget(str, target))
