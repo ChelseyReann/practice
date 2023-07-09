@@ -107,3 +107,10 @@ console.log(differentMatch(str1, str2))
 console.log(differentMatch(str3, str4))
 //time complexity - O(N)
 //space complexity - O(1)
+
+/* 
+Write a function that accepts a string and a character and returns the indices of all occurrences of that character in the string.
+
+Example Input: "Hello, World!", "o"
+Example Output: [4, 8]
+*/
