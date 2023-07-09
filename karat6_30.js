@@ -18,7 +18,7 @@ Complexity Discussion:
 n: the number of names in the list
 */
 
-const records1 = ["Martha", "Paul", "Steve", "Jennifer"];
+// const records1 = ["Martha", "Paul", "Steve", "Jennifer"];
 const records2 = ["Jennifer"];
 
 function name_order(arr, name){
@@ -33,8 +33,8 @@ function name_order(arr, name){
 //Space complexity - O(1)
 
 /* We have an array and want to get back just the names of the employees that were in the building - no duplicates
-
-records1 = [
+*/
+let records1 = [
   ["Martha",   "enter"],
   ["Paul",     "enter"],
   ["Martha",   "exit"],
@@ -51,7 +51,7 @@ records1 = [
   ["Curtis",   "enter"]
 ]
 
-*/
+
 
 function name_order(arr){
     let results = []
@@ -65,6 +65,29 @@ function name_order(arr){
   }
   
   console.log(name_order(records1))
+
+  function nameOrder(arr){
+    let results = []
+    let freqMap = {}
+
+    for(let i = 0; i < arr.length; i++){
+        if(!freqMap[arr[i][0]]){
+            freqMap[arr[i][0]] = 1
+            console.log(freqMap)
+        }
+    }
+
+    for (let name in freqMap){
+        if(freqMap[name]){
+            console.log(freqMap[name])
+            results.push(name)
+
+        }
+    }
+    return results
+  }
+
+  console.log(nameOrder(records1))
 
   //Time complexity - O(N^2)
   //Space complexity - O(N)
@@ -109,3 +132,23 @@ n: the length of the records array
 
 */
 
+function nameOrder(arr){
+    let results = []
+    let freqMap = {}
+
+    for(let i = 0; i < arr.length; i++){
+        if(!freqMap[arr[i][0]]){
+            freqMap[arr[i][0]] = 1
+        } else {
+            freqMap[arr[i][0]]++
+        }
+    }
+
+    for (let name in freqMap){
+        if(freqMap[name] % 2 !== 0){
+            results.push(name)
+
+        }
+    }
+    return results
+  }
