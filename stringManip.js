@@ -87,3 +87,21 @@ Create a function that takes two strings as input and returns the indices where 
 Example Input: "coffee", "cookie"
 Example Output: [0, 3]
 */
+
+function differentMatch(str1, str2){
+    let results = []
+
+    for(let i = 0; i < str1.length; i++){
+        if(str1[i] !== str2[i]){
+            results.push(i)
+        }
+    }
+    return results
+}
+
+let str1 = 'coffee'
+let str2 = 'cookie'
+let str3 = 'book'
+let str4 = 'look'
+console.log(differentMatch(str1, str2))
+console.log(differentMatch(str3, str4))
