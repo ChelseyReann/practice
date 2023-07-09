@@ -132,9 +132,9 @@ function findTarget(str, target){
     return results
 }
 
-let str = 'HellO, World'
-let target = 'o'
-console.log(findTarget(str, target))
+// let str = 'HellO, World'
+// let target = 'o'
+// console.log(findTarget(str, target))
 
 //Time complexity - O(N)
 //space complexity - O(N)
@@ -151,3 +151,36 @@ Approach:
 - if the string contains the target push the index of that word into the results array
 - return the results array
 */
+//NEEDS TO BE SOLVED!!!!!!!!
+function findWord(strs, target){
+    let results = []
+    let lowSentence = strs.toLowerCase()
+    let lowWord = target.toLowerCase()
+    let split = lowSentence.split(" ")
+
+    let currentIndex = 0
+    for (let i = 0; i < split.length; i++){
+        if(split[i] === lowWord){
+            const index = currentIndex + 1;
+            results.push(index)
+        }
+        currentIndex += split[i].length + 1;
+    }
+    return results
+}
+
+// let strs = "The cat and the dog sat on the mat."
+// let target1 = 'the'
+// console.log(findWord(strs,target1))
+
+
+
+
+/* 
+Develop a function that takes a list of strings and a target string, and returns the indices of all strings in the list that contain the target string.
+
+Example Input: ["apple", "banana", "grape", "kiwi"], "a"
+Example Output: [0, 1, 3]
+*/
+
+
