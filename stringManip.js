@@ -138,3 +138,10 @@ console.log(findTarget(str, target))
 
 //Time complexity - O(N)
 //space complexity - O(N)
+
+/* 
+Implement a function that receives a sentence and a word and returns the indices of all occurrences of that word within the sentence.
+
+Example Input: "The cat and the dog sat on the mat.", "the"
+Example Output: [0, 11, 19]
+*/
