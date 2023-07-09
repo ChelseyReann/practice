@@ -152,3 +152,6 @@ function nameOrder(arr){
     }
     return results
   }
+
+//Time complexity - O(N)
+//space complexity - O(N)
