@@ -105,3 +105,5 @@ let str3 = 'book'
 let str4 = 'look'
 console.log(differentMatch(str1, str2))
 console.log(differentMatch(str3, str4))
+//time complexity - O(N)
+//space complexity - O(1)
