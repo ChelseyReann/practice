@@ -81,3 +81,9 @@ function countMatch(str1, str2){
 
 //time complexity - O(N)
 //space compelxity - O(1)
+
+/*
+Create a function that takes two strings as input and returns the indices where the characters differ at the same positions.
+Example Input: "coffee", "cookie"
+Example Output: [0, 3]
+*/
