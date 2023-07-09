@@ -75,6 +75,9 @@ function countMatch(str1, str2){
     return count
 }
 
-let str1 = 'hello'
-let str2 = 'helps'
-console.log(countMatch(str1,str2))
+// let str1 = 'hello'
+// let str2 = 'helps'
+// console.log(countMatch(str1,str2))
+
+//time complexity - O(N)
+//space compelxity - O(1)
