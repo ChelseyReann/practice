@@ -27,3 +27,12 @@ let str1 = "hello"
 let str2 = "hills"
 console.log(matches(str1, str2))
 
+//time complexity - O(N)
+//Space complexity - O(1)
+
+/*
+Implement a function that accepts two strings and returns true if they have at least one character in common at the same index, and false otherwise.
+Example Input: "apple", "orange"
+Example Output: true
+*/
+
