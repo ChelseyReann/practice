@@ -58,4 +58,8 @@ console.log(booleanMatch(str3,str4))
 //Space complexity - O(1)
 
 
-
+/*
+Given two strings str1 and str2, write a function to return the count of distinct characters that match at the same positions in both strings.
+Example Input: "hello", "helps"
+Example Output: 3
+*/
