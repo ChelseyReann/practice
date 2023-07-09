@@ -189,4 +189,22 @@ approach:
 - return results
 */
 
+function findStr(arr, target){
+    let results = []
+    // let arrSplit = arr.split(" ")
+    // console.log(arrSplit)
+
+    for (let i = 0; i < arr.length; i++){
+        console.log('arr[i]: ' + arr[i])
+        if(arr[i].includes(target)){
+            results.push(i)
+        }
+    }
+    return results
+}
+
+let arr = ["apple", "banana", "grape", "kiwi"]
+let target = 'a'
+console.log(findStr(arr, target))
+
 
