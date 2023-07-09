@@ -135,3 +135,6 @@ function findTarget(str, target){
 let str = 'HellO, World'
 let target = 'o'
 console.log(findTarget(str, target))
+
+//Time complexity - O(N)
+//space complexity - O(N)
