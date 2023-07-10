@@ -45,4 +45,5 @@ function checkRecord(s) {
 let s = "PPALLL"
 console.log(checkRecord(s))
 
-
+//Time complexity - O(N)
+//space complexity - O(1)
