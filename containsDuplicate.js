@@ -57,3 +57,5 @@ function containsDupe(nums){
 
   let nums = [1,2,3,1]
 console.log(containsDupe(nums))
+//Time complexity - O(N)
+//Space complexity - O(N)
