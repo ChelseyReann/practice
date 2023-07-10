@@ -9,6 +9,14 @@ The student is eligible for an attendance award if they meet both of the followi
 The student was absent ('A') for strictly fewer than 2 days total.
 The student was never late ('L') for 3 or more consecutive days.
 Return true if the student is eligible for an attendance award, or false otherwise.
+
+Approach:
+ have an absent counter
+ have a late counter
+ everytime A shows up add 1 to absent
+ everytime l shows up add 1 to late
+ if absent counter > 1 && late counter > 2 return false
+ otherwise return true 
 */
 
 function checkRecord(s) {
@@ -36,4 +44,5 @@ function checkRecord(s) {
 
 let s = "PPALLL"
 console.log(checkRecord(s))
+
 
