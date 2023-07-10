@@ -50,3 +50,6 @@ let magazine3 = 'aab'
 // console.log(canConstruct(ransomNote,magazine))
 // console.log(canConstruct(ransomNote2,magazine2))
 console.log(canConstruct(ransomNote3,magazine3))
+
+//Time complexity - O(N)
+//Space complexity - O(N)
