@@ -209,6 +209,14 @@ console.log(findStr(arr, target))
 
 /* 
 Write a function that accepts a string and returns the count of vowels and consonants in the string. The function should iterate over each character in the string and categorize them as vowels or consonants based on a predefined set of vowels.
+
+Approach:
+- create a vowel counter
+- create a consonant counter
+- create a vowel array
+- loop through the string and check if vowels includes what is at the string at that index if it does then vowel counter ++ otherwise consonant counter++
+- return {Vowels: vowelCounter,
+Consonants: consonantsCounter}
 */
 
 
