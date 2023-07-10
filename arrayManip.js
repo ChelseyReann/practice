@@ -57,6 +57,8 @@ function indexMatch(arr1, arr2){
 let arr1 = [1,2,5,8,10]
 let arr2 = [0,2,5,9,11]
 console.log(indexMatch(arr1, arr2))
+//Time complexity - O(N)
+//Space complexity - O(1)
 
 
 
