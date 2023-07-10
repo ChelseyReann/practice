@@ -207,4 +207,8 @@ let arr = ["apple", "banana", "grape", "kiwi"]
 let target = 'a'
 console.log(findStr(arr, target))
 
+/* 
+Write a function that accepts a string and returns the count of vowels and consonants in the string. The function should iterate over each character in the string and categorize them as vowels or consonants based on a predefined set of vowels.
+*/
+
 
