@@ -16,14 +16,17 @@ function canConstruct(ransomNote, magazine){
 
     for (let i = 0; i < ransomNote.length; i++){
         if(!freqMap[ransomNote[i]]){
+            console.log("freqMap[ransomNote[i]] = 1: " + freqMap[ransomNote[i]])
             freqMap[ransomNote[i]] = 1
         } else {
+            console.log("freqMap[ransomNote[i]]++: " + freqMap[ransomNote[i]])
             freqMap[ransomNote[i]]++
         }
     }
 
     for (let i = 0; i < magazine.length; i++){
         if(freqMap[magazine[i]]){
+            console.log("freqMap[magazine[i]" + freqMap[magazine[i]])
             freqMap[magazine[i]]--
         }
     }
@@ -37,3 +40,13 @@ function canConstruct(ransomNote, magazine){
 
     return true
 }
+
+let ransomNote = 'a'
+let magazine = 'b'
+let ransomNote2 = 'aa'
+let magazine2 = 'ab'
+let ransomNote3 = 'aa'
+let magazine3 = 'aab'
+// console.log(canConstruct(ransomNote,magazine))
+// console.log(canConstruct(ransomNote2,magazine2))
+console.log(canConstruct(ransomNote3,magazine3))
