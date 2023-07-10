@@ -10,3 +10,30 @@ approach:
 - loop through the freqMap and if the count of each character is more than 0 then return false
 - other wise return true
 */
+
+function canConstruct(ransomNote, magazine){
+    let freqMap = {}
+
+    for (let i = 0; i < ransomNote.length; i++){
+        if(!freqMap[ransomNote[i]]){
+            freqMap[ransomNote[i]] = 1
+        } else {
+            freqMap[ransomNote[i]]++
+        }
+    }
+
+    for (let i = 0; i < magazine.length; i++){
+        if(freqMap[magazine[i]]){
+            freqMap[magazine[i]]--
+        }
+    }
+
+    for(let char in freqMap){
+        if(freqMap[char] > 0){
+            console.log("freqMap[char]: " + freqMap[char])
+            return false
+        }
+    }
+
+    return true
+}
