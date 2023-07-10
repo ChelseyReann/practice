@@ -27,17 +27,33 @@
 // }
 
 
-function containsDuplicate(nums){
-    let freqMap = {}
+// function containsDuplicate(nums){
+//     let freqMap = {}
 
+//     for (let i = 0; i < nums.length; i++){
+//         if(freqMap[nums[i]]){
+//             return true
+//         }
+//         freqMap[nums[i]] = true
+//     }
+//     return false
+// }
+
+
+
+function containsDupe(nums){
+    let freqMap = {}
+  
     for (let i = 0; i < nums.length; i++){
-        if(freqMap[nums[i]]){
-            return true
-        }
-        freqMap[nums[i]] = true
+      if(!freqMap[nums[i]]){
+        freqMap[nums[i]] = 1
+      } else {
+        freqMap[nums[i]]++
+        return true
+      }
     }
     return false
-}
+  }
 
-let nums = [1,2,3,1]
-console.log(containsDuplicate(nums))
+  let nums = [1,2,3,1]
+console.log(containsDupe(nums))
