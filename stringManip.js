@@ -238,3 +238,15 @@ function letterIdentify(str){
 let str = 'Hello World'
 console.log(letterIdentify(str))
 
+/* 
+Write a function that accepts two strings and returns the longest common subsequence (LCS) between them. The LCS is the longest sequence of characters that appears in the same order in both strings, but not necessarily consecutively.
+Example Input:
+String 1: "ABCDGH"
+String 2: "AEDFHR"
+
+Example Output:
+Longest Common Subsequence: "ADH"
+
+In this example, the function receives two strings, "ABCDGH" and "AEDFHR". The longest common subsequence (LCS) between the two strings is "ADH". It is the longest sequence of characters that appears in the same order in both strings but not necessarily consecutively.
+*/
+
