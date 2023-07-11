@@ -143,4 +143,7 @@ const enrollments = [
   console.log(course_position(enrollments))
   console.log(course_position(enrollments2));
 
+//Time complexity - O(N^2)
+//Space complexity - O(N^2)
+
 
