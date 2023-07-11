@@ -24,4 +24,5 @@ const schedule1 = [
   console.log(course_position(schedule1, "Political Science"));
   console.log(course_position(schedule1, "Economics"));
   console.log(course_position(schedule2, "Political Science"));
-
+//Time complexity - O(N)
+//Space complexity - O(1)
