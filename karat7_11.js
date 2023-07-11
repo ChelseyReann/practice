@@ -146,4 +146,22 @@ const enrollments = [
 //Time complexity - O(N^2)
 //Space complexity - O(N^2)
 
+function coursePosition(arr){
+    const pairsMap = new Map
+
+    for (let i = 0; i < arr.length; i++){
+        for (let j = i + 1; j < arr.length; j++){
+            let student1ID = arr[i][0]
+            let student2ID = arr[j][0]
+
+            if(student1ID !== student2ID){
+                let pair = [student1ID, student2ID]
+                let sortedPair = pair.sort().join(",")
+                pairsMap.set(sortedPair, true)
+            }
+        }
+    }
+    return Array.from(pairsMap.keys())
+}
+
 
