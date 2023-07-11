@@ -26,3 +26,8 @@ const schedule1 = [
   console.log(course_position(schedule2, "Political Science"));
 //Time complexity - O(N)
 //Space complexity - O(1)
+
+  
+//Write a function that will print out all the student ID's from the array with no duplicates
+
+
