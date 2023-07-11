@@ -61,5 +61,16 @@ console.log(indexMatch(arr1, arr2))
 //Space complexity - O(1)
 
 
+/*
+Write a function that accepts an array of numbers and returns the highest and lowest values in the array. The function should iterate over the array and keep track of the current highest and lowest values encountered.
+
+Example Input:
+Array: [5, 8, 2, 10, -3]
+
+Example Output:
+Highest value: 10
+Lowest value: -3
+*/
+
 
 
