@@ -56,4 +56,7 @@ function course_position(arr) {
 }
 
 console.log(course_position(enrollments1));
+//Time complexity - O(N^2)
+//Space complexity - O(N)
+
 
