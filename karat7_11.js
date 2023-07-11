@@ -163,5 +163,6 @@ function coursePosition(arr){
     }
     return Array.from(pairsMap.keys())
 }
-
+//Time complexity - O(N^2)
+//Space complexity - O(N^2)
 
