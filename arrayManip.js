@@ -97,5 +97,8 @@ function highLow(arr){
 let arr3 = [5, 8, 2, 10, -3]
 console.log(highLow(arr3))
 
+//time complexity - O(N)
+//space complexity - O(1)
+
 
 
