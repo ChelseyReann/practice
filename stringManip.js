@@ -287,3 +287,6 @@ function LCS(str1, str2){
 let str1 = "ABCDGH"
 let str2 = "AEDFHR"
 console.log(LCS(str1,str2))
+
+//time complexity - O(N)
+//space complexity - O(N)
