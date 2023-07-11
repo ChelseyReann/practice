@@ -70,7 +70,32 @@ Array: [5, 8, 2, 10, -3]
 Example Output:
 Highest value: 10
 Lowest value: -3
+
+Approach:
+- two pointers: one for highest value and one for lowest value
+- loop through the array 
+- if arr[i] > max then max = arr[i]
+- if arr[i] < low then low = arr[i]
+- return low and high values
 */
+
+function highLow(arr){
+    let high = arr[0]
+    let low = arr[1]
+
+    for (let i = 0; i < arr.length; i++){
+        if(arr[i] > high){
+            high = arr[i]
+        }
+        if(arr[i] < low){
+            low = arr[i]
+        }
+    }
+    return "Highest value is: " + high + ", and lowest value is: " + low
+}
+
+let arr3 = [5, 8, 2, 10, -3]
+console.log(highLow(arr3))
 
 
 
