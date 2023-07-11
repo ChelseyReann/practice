@@ -248,5 +248,42 @@ Example Output:
 Longest Common Subsequence: "ADH"
 
 In this example, the function receives two strings, "ABCDGH" and "AEDFHR". The longest common subsequence (LCS) between the two strings is "ADH". It is the longest sequence of characters that appears in the same order in both strings but not necessarily consecutively.
+
+Approach:
+- create a freqMap
+- create an empty results array - can split it back into a string later
+- loop through str1 adding elements to freqMap
+- go through str2 and decrease quanity in freqMap
+- loop through freqMap and for any keys that === 0 push those in results
+- return results.split("")
 */
 
+function LCS(str1, str2){
+    let results = []
+    let freqMap = {}
+
+    for (let i = 0; i < str1.length; i++){
+        if(!freqMap[str1[i]]){
+            freqMap[str1[i]] = 1
+        } else {
+            freqMap[str1[i]]++
+        }
+
+        if(!freqMap[str2[i]]){
+            freqMap[str2[i]] = -1
+        } else {
+            freqMap[str2[i]]--
+        }
+    }
+
+    for(let key in freqMap){
+        if(freqMap[key] === 0){
+            results.push(key)
+        }
+    }
+    return results.join("")
+}
+
+let str1 = "ABCDGH"
+let str2 = "AEDFHR"
+console.log(LCS(str1,str2))
