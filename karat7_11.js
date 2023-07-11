@@ -30,4 +30,30 @@ const schedule1 = [
   
 //Write a function that will print out all the student ID's from the array with no duplicates
 
+const enrollments1 = [
+    ["58", "Linear Algebra"],
+    ["94", "Art History"],
+    ["94", "Operating Systems"],
+    ["17", "Software Design"],
+    ["58", "Mechanics"],
+    ["58", "Economics"],
+    ["17", "Linear Algebra"],
+    ["17", "Political Science"],
+    ["94", "Economics"],
+    ["25", "Economics"],
+    ["58", "Software Design"]
+  ];
+
+function course_position(arr) {
+  let results = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (!results.includes(arr[i][0])) {
+      results.push(arr[i][0]);
+    }
+  }
+  return results;
+}
+
+console.log(course_position(enrollments1));
 
