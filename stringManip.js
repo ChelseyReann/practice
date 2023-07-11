@@ -195,7 +195,6 @@ function findStr(arr, target){
     // console.log(arrSplit)
 
     for (let i = 0; i < arr.length; i++){
-        console.log('arr[i]: ' + arr[i])
         if(arr[i].includes(target)){
             results.push(i)
         }
@@ -203,9 +202,9 @@ function findStr(arr, target){
     return results
 }
 
-let arr = ["apple", "banana", "grape", "kiwi"]
-let target = 'a'
-console.log(findStr(arr, target))
+// let arr = ["apple", "banana", "grape", "kiwi"]
+// let target = 'a'
+// console.log(findStr(arr, target))
 
 /* 
 Write a function that accepts a string and returns the count of vowels and consonants in the string. The function should iterate over each character in the string and categorize them as vowels or consonants based on a predefined set of vowels.
@@ -218,5 +217,24 @@ Approach:
 - return {Vowels: vowelCounter,
 Consonants: consonantsCounter}
 */
+function letterIdentify(str){
+    let vowelCount = 0
+    let consonantsCount = 0
+    let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 
+    for (let i = 0; i < str.length; i++){
+        let char = str[i].toLowerCase()
+        console.log(char)
+        if(vowels.includes(char)){
+            vowelCount++
+        } else if(char >= 'a' && char <= 'z') {
+            consonantsCount++
+        }
+    }
+
+    return "vowels: " + vowelCount + " , " + "consonants: " + consonantsCount
+}
+
+let str = 'Hello World'
+console.log(letterIdentify(str))
 
