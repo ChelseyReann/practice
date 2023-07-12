@@ -26,3 +26,42 @@ Approach:
 - destructure the mismatched array and set it equal to mismatchedIndices
 - return s[idx1] === goal[idx2] && s[idx2] === goal[idx1]
 */
+
+function buddySwap(s, goal){
+    if(s.length !== goal.length) return false
+
+    if(s === goal){
+        let freqMap = {}
+        for(let char of s){
+            if(freqMap[char]){
+                return true
+            }
+            freqMap[char] = 1
+        }
+        return false
+    }
+
+    let mismatchedIndices = []
+    for(let i = 0; i < s.length; i++){
+        if(s[i] !== goal[i]){
+            mismatchedIndices.push(i)
+        }
+    }
+
+    if(mismatchedIndices.length !== 2) return false
+
+    let [ind1, ind2] = mismatchedIndices
+    return s[ind1] === goal[ind2] && s[ind2] === goal[ind1]
+}
+
+let s = "ab"
+let goal = "ba"
+
+let s1 = "ab"
+let goal1 = 'ab'
+
+let s2 = "aa"
+let goal2 = 'aa'
+console.log(buddySwap(s, goal))
+console.log(buddySwap(s1, goal1))
+console.log(buddySwap(s2, goal2))
