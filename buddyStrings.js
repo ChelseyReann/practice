@@ -65,3 +65,6 @@ let goal2 = 'aa'
 console.log(buddySwap(s, goal))
 console.log(buddySwap(s1, goal1))
 console.log(buddySwap(s2, goal2))
+
+//Time complexity - O(N)
+//Space complexity - O(N)
