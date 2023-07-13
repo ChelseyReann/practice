@@ -19,4 +19,7 @@ console.log(palindromeNum(x))
 console.log(palindromeNum(x2))
 console.log(palindromeNum(x3))
 
+//Time complexity - O(log n)
+//space complexity - O(1)
+
 
