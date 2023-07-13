@@ -140,8 +140,8 @@ const enrollments = [
     return results
   }
   
-  console.log(course_position(enrollments))
-  console.log(course_position(enrollments2));
+//   console.log(course_position(enrollments))
+//   console.log(course_position(enrollments2));
 
 //Time complexity - O(N^2)
 //Space complexity - O(N^2)
@@ -165,4 +165,26 @@ function coursePosition(arr){
 }
 //Time complexity - O(N^2)
 //Space complexity - O(N^2)
+
+function findPairs(arr){
+    let onlyNums = []
+    let onlyPairs = []
+
+    for(let i = 0; i < arr.length; i++){
+        onlyNums.push(arr[i][0])
+    }
+    console.log("onlyNums: " + onlyNums)
+
+    let unique = [...new Set(onlyNums)]
+    console.log("unique: " + unique)
+
+    for(let i = 0; i < unique.length; i++){
+        for(let j = i + 1; j < unique.length; j++){
+            onlyPairs.push(unique[i] + ', ' + unique[j])
+        }
+    }
+    return onlyPairs
+}
+
+console.log(findPairs(enrollments))
 
