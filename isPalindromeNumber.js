@@ -8,7 +8,7 @@ Approach:
 
 function palindromeNum(x){
     let modX = Number(String(x).split("").reverse().join(""))
-
+    console.log("modX: " + modX)
     return modX === x
 }
 
