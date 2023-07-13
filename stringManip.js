@@ -158,20 +158,17 @@ function findWord(strs, target){
     let lowWord = target.toLowerCase()
     let split = lowSentence.split(" ")
 
-    let currentIndex = 0
     for (let i = 0; i < split.length; i++){
         if(split[i] === lowWord){
-            const index = currentIndex + 1;
-            results.push(index)
+            results.push(i)
         }
-        currentIndex += split[i].length + 1;
     }
     return results
 }
 
-// let strs = "The cat and the dog sat on the mat."
-// let target1 = 'the'
-// console.log(findWord(strs,target1))
+let strs = "The cat and the dog sat on the mat."
+let target1 = 'the'
+console.log(findWord(strs,target1))
 
 
 
@@ -235,8 +232,8 @@ function letterIdentify(str){
     return "vowels: " + vowelCount + " , " + "consonants: " + consonantsCount
 }
 
-let str = 'Hello World'
-console.log(letterIdentify(str))
+// let str = 'Hello World'
+// console.log(letterIdentify(str))
 
 /* 
 Write a function that accepts two strings and returns the longest common subsequence (LCS) between them. The LCS is the longest sequence of characters that appears in the same order in both strings, but not necessarily consecutively.
@@ -284,9 +281,9 @@ function LCS(str1, str2){
     return results.join("")
 }
 
-let str1 = "ABCDGH"
-let str2 = "AEDFHR"
-console.log(LCS(str1,str2))
+// let str1 = "ABCDGH"
+// let str2 = "AEDFHR"
+// console.log(LCS(str1,str2))
 
 //time complexity - O(N)
 //space complexity - O(N)

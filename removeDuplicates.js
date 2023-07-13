@@ -10,8 +10,8 @@ function removeDupes(nums){
 }
 let nums = [1, 1, 2]
 let nums2 = [0,0,1,1,1,2,2,3,3,4]
-console.log(removeDupes(nums))
-console.log(removeDupes(nums2))
+// console.log(removeDupes(nums))
+// console.log(removeDupes(nums2))
 //Time complexity - O(N)
 //Space complexity - O(N)
 
@@ -27,6 +27,25 @@ function removeDuplicates(nums){
     }
     return results
 }
+
+function removeDuplicate(nums) {
+    let freqMap = {}
+    let k = 0;
+
+    for(let i = 0; i < nums.length; i++){
+        if(!freqMap[nums[i]]){
+            freqMap[nums[i]] = true;
+            nums[k] = nums[i];
+            console.log("nums[k]: " + nums[k])
+            k++;
+        }
+    }
+
+    return k;
+};
+
+console.log(removeDuplicate(nums))
+console.log(removeDuplicate(nums2))
 
 //Time complexity - O(N) - N = number of elements in the nums array that we are iterating through
 //Space complexity - O(N) - creating a new freqmap and results array. taking up new space in memory
