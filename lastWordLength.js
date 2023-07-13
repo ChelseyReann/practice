@@ -13,3 +13,6 @@ function lastWordLength(s){
 
 let s = "Hello World"
 console.log(lastWordLength(s))
+
+//Time complexity - O(N)
+//Space complexity - O(1)
