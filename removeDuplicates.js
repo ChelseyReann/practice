@@ -12,6 +12,8 @@ let nums = [1, 1, 2]
 let nums2 = [0,0,1,1,1,2,2,3,3,4]
 console.log(removeDupes(nums))
 console.log(removeDupes(nums2))
+//Time complexity - O(N)
+//Space complexity - O(N)
 
 function removeDuplicates(nums){
     let freqMap = {}
