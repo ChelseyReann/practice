@@ -41,19 +41,19 @@
 
 
 
-function containsDupe(nums){
-    let freqMap = {}
+// function containsDupe(nums){
+//     let freqMap = {}
   
-    for (let i = 0; i < nums.length; i++){
-      if(!freqMap[nums[i]]){
-        freqMap[nums[i]] = 1
-      } else {
-        freqMap[nums[i]]++
-        return true
-      }
-    }
-    return false
-  }
+//     for (let i = 0; i < nums.length; i++){
+//       if(!freqMap[nums[i]]){
+//         freqMap[nums[i]] = 1
+//       } else {
+//         freqMap[nums[i]]++
+//         return true
+//       }
+//     }
+//     return false
+//   }
 
   let nums = [1,2,3,1]
 console.log(containsDupe(nums))
