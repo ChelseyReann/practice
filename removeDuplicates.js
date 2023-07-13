@@ -3,6 +3,16 @@
 //Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums.
 //Return k.
 
+function removeDupes(nums){
+    const mySet = new Set(nums)
+    const unique = [...mySet]
+    return unique
+}
+let nums = [1, 1, 2]
+let nums2 = [0,0,1,1,1,2,2,3,3,4]
+console.log(removeDupes(nums))
+console.log(removeDupes(nums2))
+
 function removeDuplicates(nums){
     let freqMap = {}
     let results = []
@@ -36,5 +46,5 @@ function removeDuplicates(nums){
 
 //time complexity O(n)
 
-console.log(removeDuplicates([1, 1, 2]))
-console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
+// console.log(removeDuplicates([1, 1, 2]))
+// console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))
