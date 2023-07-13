@@ -187,4 +187,5 @@ function findPairs(arr){
 }
 
 console.log(findPairs(enrollments))
-
+//Time complexity - O(N^2)
+//Space complexity - O(N)
