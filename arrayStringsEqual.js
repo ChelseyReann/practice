@@ -18,3 +18,6 @@ function arrayStringsEqual(words1, words2){
 let words1 = ['ab', 'c']
 let words2 = ['a', 'bc']
 console.log(arrayStringsEqual(words1, words2))
+
+//time complexity - O(N)
+//space complexity - O(N)
