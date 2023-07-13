@@ -6,4 +6,17 @@ Approach:
 - return if modX === x
 */
 
+function palindromeNum(x){
+    let modX = Number(String(x).split("").reverse().join(""))
+
+    return modX === x
+}
+
+let x = 121
+let x2 = -121
+let x3 = 10
+console.log(palindromeNum(x))
+console.log(palindromeNum(x2))
+console.log(palindromeNum(x3))
+
 
