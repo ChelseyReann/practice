@@ -17,15 +17,21 @@ You must do this by modifying the input array in-place with O(1) extra memory.
 function reverseString(s){
     let start = 0
     let end = s.length - 1
+    let split = s.split("")
+    console.log(split)
 
-    while (start <= end){
-        let current = s[start]
-        s[start] = s[end]
-        s[end] = current
+    while (start < end){
+        let current = split[start]
+        split[start] = split[end]
+        split[end] = current
         start++
         end--
     }
+    return split.join("")
 }
 
+let s = 'chelsey'
+console.log(reverseString(s))
+
 //Time complexity - O(N)
-//Space complexity - O(1)
+//Space complexity - O(N)
