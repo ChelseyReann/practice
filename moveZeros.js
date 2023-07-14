@@ -35,3 +35,5 @@ function moveZero(nums){
 
 let nums = [1, 0, 2, 0, 4, 0]
 console.log(moveZero(nums))
+//Time complexity - O(N)
+//Space complexity - O(1)
