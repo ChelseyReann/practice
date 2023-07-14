@@ -13,3 +13,25 @@ Approach:
 - return array
 */
 
+function moveZero(nums){
+    let start = 0
+    let end = nums.length - 1
+
+    while (start < end){
+        let current = nums[start]
+        if(nums[start] === 0){
+            nums[start] = nums[end]
+            nums[end] = current
+            start++
+            end--
+        } else {
+            start++
+            end--
+        }
+    }
+    return nums
+
+}
+
+let nums = [1, 0, 2, 0, 4, 0]
+console.log(moveZero(nums))
