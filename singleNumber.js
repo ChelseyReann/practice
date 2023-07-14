@@ -33,3 +33,12 @@ const singleInt = (numbers) => {
 
 let numbers = [2, 2, 1]
 console.log(singleInt(numbers))
+
+function unique(nums){
+    let unique = [...new Set (nums)]
+    return unique
+}
+
+console.log(unique(nums))
+//time complexity - O(N)
+//space compplexity - O(N)
