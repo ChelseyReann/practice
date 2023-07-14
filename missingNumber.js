@@ -36,3 +36,5 @@ let nums = [1,2,4,5,7]
 let nums2 = [3,5,7,9]//[4,6,8]
 console.log(missingNums(nums))
 console.log(missingNums(nums2))
+//Time compelxity - O(N)
+//Space complexity - O(1)
