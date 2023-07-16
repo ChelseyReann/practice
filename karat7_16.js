@@ -41,4 +41,7 @@ function playerPosition(arr){
       }
     }
   }
+
+//time complexity - O(N)
+//space complexity - O(1)
   
