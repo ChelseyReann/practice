@@ -20,27 +20,25 @@ Complexity Analysis variable:
 n = number of spaces in the board
 */
 
-
-const playerBoard1 = ["-", "-", "P", "-", "-", "-"];
-console.log(playerPosition(playerBoard1)); // returns 2
-
-const playerBoard2 = ["P", "-", "-"];
-console.log(playerPosition(playerBoard2)); // returns 0
-
-const playerBoard3 = ["-", "-", "-", "P"];
-console.log(playerPosition(playerBoard3)); // returns 3
-
-const playerBoard4 = ["P"];
-console.log(playerPosition(playerBoard4)); // returns 0 
-
-
-function playerPosition(arr){
-    for(let i = 0; i < arr.length; i++){
-      if(arr[i] === "P"){
-        return i
-      }
+function playerPosition(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "P") {
+      return i;
     }
   }
+}
+
+// const playerBoard1 = ["-", "-", "P", "-", "-", "-"];
+// console.log(playerPosition(playerBoard1)); // returns 2
+
+// const playerBoard2 = ["P", "-", "-"];
+// console.log(playerPosition(playerBoard2)); // returns 0
+
+// const playerBoard3 = ["-", "-", "-", "P"];
+// console.log(playerPosition(playerBoard3)); // returns 3
+
+// const playerBoard4 = ["P"];
+// console.log(playerPosition(playerBoard4)); // returns 0 
 
 //time complexity - O(N)
 //space complexity - O(1)
@@ -69,3 +67,30 @@ Approach:
 - if arr[i] === "P" || arr[i] === "M"
 - 
 */
+
+function distance(arr) {
+  let count = 0;
+  let inBetween = false;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "P" || arr[i] === "M") {
+      inBetween = !inBetween;
+    }
+    if (arr[i] === "-" && inBetween) {
+      count++;
+    }
+  }
+  return count;
+}
+
+const distanceBoard1 = ["-", "P", "-", "-", "M", "-"];
+console.log(distance(distanceBoard1)); // returns 2
+
+const distanceBoard2 = ["-", "M", "-", "-", "P", "-"];
+console.log(distance(distanceBoard2)); // returns 2
+
+const distanceBoard3 = ["M", "-", "-", "-", "P"];
+console.log(distance(distanceBoard3)); // returns 3
+
+const distanceBoard4 = ["P", "M"];
+console.log(distance(distanceBoard4)); // returns 0
