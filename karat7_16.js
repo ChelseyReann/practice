@@ -144,3 +144,39 @@ Complexity Analysis variables:
 n = number of rows
 m = number of columns
 */
+
+
+function player_position(arr){
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 0; j < arr[0].length; j++){
+            if(arr[i][j] === "P"){
+                return [i, j]
+            }
+        }
+    }
+}
+
+
+const board1 = [
+    ["-", "-", "-", "-", "-", "-"],
+    ["-", "-", "M", "-", "M", "-"],
+    ["-", "-", "-", "P", "-", "-"],
+    ["M", "-", "-", "M", "-", "-"],
+    ["-", "M", "-", "-", "-", "-"],
+  ];
+  console.log(player_position(board1)); // returns 2,3
+  
+  const board2 = [
+    ["P", "-", "-", "-", "-", "-"],
+    ["-", "-", "M", "-", "M", "-"],
+    ["-", "-", "-", "-", "-", "-"],
+    ["M", "-", "-", "M", "-", "-"],
+    ["-", "M", "-", "-", "-", "-"],
+  ];
+  console.log(player_position(board2)); // returns 0,0
+  
+  const board3 = [
+    ["M", "-", "M"],
+    ["M", "-", "P"],
+  ];
+  console.log(player_position(board3)); // returns 1,2 
