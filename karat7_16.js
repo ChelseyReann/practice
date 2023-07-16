@@ -97,3 +97,50 @@ console.log(distance(distanceBoard4)); // returns 0
 
 //time complexity - O(N)
 //Space complexity - O(1)
+
+/*
+Our user research team has discovered that two-dimensional games are all the rage; it's time to upgrade!
+
+New board constraints:
+ - The board is a two-dimensional grid of characters
+ - An empty space on the board is denoted by a dash '-'
+ - The player is denoted by the letter 'P'
+ - Monsters are denoted by the letter 'M'
+
+Write a function that takes a two-dimensional board, and returns the location of the player.
+
+For the location you can define whatever coordinate system works for you. A standard approach is to define the top-left corner of the board as (0,0), and give coordinates in (row,column) order.
+
+Sample input and output:
+
+board1 = [
+  ['-', '-', '-', '-', '-', '-'],
+  ['-', '-', 'M', '-', 'M', '-'],
+  ['-', '-', '-', 'P', '-', '-'],
+  ['M', '-', '-', 'M', '-', '-'],
+  ['-', 'M', '-', '-', '-', '-'],
+]
+Expected Output (in any format): 
+(2,3)
+
+board2 = [
+  ['P', '-', '-', '-', '-', '-'],
+  ['-', '-', 'M', '-', 'M', '-'],
+  ['-', '-', '-', '-', '-', '-'],
+  ['M', '-', '-', 'M', '-', '-'],
+  ['-', 'M', '-', '-', '-', '-'],
+]
+Expected Output (in any format): 
+(0,0)
+
+board3 = [
+  ['M', '-', 'M'],
+  ['M', '-', 'P'],
+]
+Expected Output (in any format): 
+(1,2)
+
+Complexity Analysis variables:
+n = number of rows
+m = number of columns
+*/
