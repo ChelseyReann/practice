@@ -180,3 +180,6 @@ const board1 = [
     ["M", "-", "P"],
   ];
   console.log(player_position(board3)); // returns 1,2 
+
+  //time complexity - O(N)
+  //Space complexity - O(1)
