@@ -94,3 +94,6 @@ console.log(distance(distanceBoard3)); // returns 3
 
 const distanceBoard4 = ["P", "M"];
 console.log(distance(distanceBoard4)); // returns 0
+
+//time complexity - O(N)
+//Space complexity - O(1)
