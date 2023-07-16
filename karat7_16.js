@@ -44,4 +44,28 @@ function playerPosition(arr){
 
 //time complexity - O(N)
 //space complexity - O(1)
-  
+
+/*
+Let's make this game more interesting by adding a monster to the board, denoted by the letter 'M'
+
+The board is still a list of characters, with exactly one player, 'P', and one monster, 'M'.
+
+Write a function that takes a board, and returns the number of spaces (represented by dashes '-' on the board) between the player and the monster.
+
+Sample input and output:
+board1 = ['-', 'P', '-', '-', 'M', '-'] => 2
+board2 = ['-', 'M', '-', '-', 'P', '-'] => 2
+board3 = ['M', '-', '-', '-', 'P'] => 3
+board4 = ['P', 'M'] => 0
+
+For this question, you cannot call built-in search functions like index() or indexOf().
+
+Complexity Analysis variable:
+n = number of spaces in the board
+
+Approach:
+- use a count variable = 0
+- use a for loop to loop through the array
+- if arr[i] === "P" || arr[i] === "M"
+- 
+*/
