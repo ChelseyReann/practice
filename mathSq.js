@@ -10,3 +10,6 @@ let x = 4
 let x2 = 8
 console.log(mathSq(x))
 console.log(mathSq(x2))
+
+//time complexity - O(1)
+//space complexity - O(1)
