@@ -36,3 +36,6 @@ console.log(twoSum(numbers2,target2))
 let numbers3 = [-1,0] //Output: [1,2]
 let target3 = -1
 console.log(twoSum(numbers3,target3))
+
+//Time complexity - O(N)
+//Spsce complexity - O(1)
