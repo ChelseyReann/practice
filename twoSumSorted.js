@@ -7,3 +7,12 @@ The tests are generated such that there is exactly one solution. You may not use
 
 Your solution must use only constant extra space.
 */
+
+let numbers = [2,7,11,15] //Output: [1,2]
+let target = 9
+
+let numbers2 = [2,3,4] //Output: [1,3]
+let target2 = 6
+
+let numbers3 = [-1,0] //Output: [1,2]
+let target3 = -1
