@@ -13,3 +13,18 @@ Approach:
  - results.push(counter)
  -return results outside of the loop
 */
+
+function lessThanCurrent(nums){
+    let results = []
+
+    for(let i =0; i < nums.length; i++){
+        let counter = 0
+        for(let j = 0; j < nums.length; j++){
+            if(nums[i] < nums[j]){
+                counter++
+            }
+        }
+        results.push(counter)
+    }
+    return results
+}
