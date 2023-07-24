@@ -35,3 +35,6 @@ let nums3 = [7,7,7,7] //[0,0,0,0]
 console.log(lessThanCurrent(nums))
 console.log(lessThanCurrent(nums2))
 console.log(lessThanCurrent(nums3))
+
+//Time complexity - O(N^2)
+//Space complexity - O(N)
