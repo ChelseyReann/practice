@@ -35,3 +35,6 @@ let nums = [1, 2, 3, 2]; //output: 4
 let nums2 = [1,1,1,1] //output: 0
 console.log(uniqueSum(nums));
 console.log(uniqueSum(nums2));
+
+//time complexity - O(N)
+//space complexity - O(N)
