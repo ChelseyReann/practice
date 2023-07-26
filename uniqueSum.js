@@ -13,22 +13,23 @@ Approach:
 */
 
 function uniqueSum(nums) {
-    let freqMap = {};
-    let sum = 0
-  
-    for (let i = 0; i < nums.length; i++) {
-      if (!freqMap[nums[i]]) {
-        freqMap[nums[i]] = 1;
-      } else {
-        freqMap[nums[i]]++;
-      }
+  let freqMap = {};
+  let sum = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    if (!freqMap[nums[i]]) {
+      freqMap[nums[i]] = 1;
+    } else {
+      freqMap[nums[i]]++;
     }
-    for (let num in freqMap) {
-      if (freqMap[num] === 1) {
-        sum += parseInt(num);
-      }
-    }
-    return sum
   }
+  for (let num in freqMap) {
+    if (freqMap[num] === 1) {
+      sum += parseInt(num);
+    }
+  }
+  return sum;
+}
 
-
+let nums = [1, 2, 3, 2];
+console.log(uniqueSum(nums));
