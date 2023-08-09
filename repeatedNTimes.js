@@ -51,3 +51,6 @@ let nums3 = [5,1,5,2,5,3,5,4]
 console.log(repeatedNTimes(nums))
 console.log(repeatedNTimes(nums2))
 console.log(repeatedNTimes(nums3))
+
+//Time complexity - O(N)
+//Space complexity - O(N)
