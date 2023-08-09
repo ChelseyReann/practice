@@ -21,4 +21,8 @@ Example 3:
 Input: nums = [5,1,5,2,5,3,5,4]
 Output: 5
 
+Approach:
+- create an empty freqMap
+- add nums to the freqMap
+- loop through freqMap and return where the number is repeated
 */
