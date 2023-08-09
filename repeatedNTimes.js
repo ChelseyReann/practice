@@ -48,3 +48,6 @@ function repeatedNTimes(nums) {
 let nums = [1,2,3,3]
 let nums2 = [2,1,2,5,3,2]
 let nums3 = [5,1,5,2,5,3,5,4]
+console.log(repeatedNTimes(nums))
+console.log(repeatedNTimes(nums2))
+console.log(repeatedNTimes(nums3))
