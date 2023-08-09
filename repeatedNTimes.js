@@ -26,3 +26,21 @@ Approach:
 - add nums to the freqMap
 - loop through freqMap and return where the number is repeated
 */
+
+function repeatedNTimes(nums) {
+    let freqMap = {}
+
+    for(let i = 0; i < nums.length; i++){
+        if(!freqMap[nums[i]]){
+            freqMap[nums[i]] = 1
+        } else {
+            freqMap[nums[i]]++
+        }
+    }
+
+    for(let num in freqMap){
+        if(freqMap[num] >= 2){
+            return parseInt(num)
+        }
+    }
+};
